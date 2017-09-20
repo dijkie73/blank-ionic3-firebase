@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import * as Constant from '../../environment';
+
+declare var gtag: Function;
 
 @Component({
   selector: 'page-list',
@@ -26,6 +29,19 @@ export class ListPage {
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
+  }
+
+  ionViewWillEnter() {
+      var pagePath: string = '/list';
+
+      gtag('config', Constant.GA_TRACKING_ID, {
+          'page_title': 'List',
+          'page_location': Constant.BASE_PATH + pagePath,
+          'page_path': pagePath
+      });
+
+      console.log('page_location:' + Constant.BASE_PATH + pagePath);
+      console.log('page_path:' + pagePath);
   }
 
   itemTapped(event, item) {

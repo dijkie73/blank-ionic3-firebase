@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\env",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\pages",
+    "\\src\\pages\\home",
+    "\\src\\theme"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }
