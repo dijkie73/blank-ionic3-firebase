@@ -39,11 +39,12 @@
     "promise-polyfill": "6.0.2",
     "rxjs": "5.4.0",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.12"
-  },
-  "devDependencies": {
+    "zone.js": "0.8.12",
     "@ionic/app-scripts": "2.1.4",
     "typescript": "2.3.4"
+  },
+  "devDependencies": {
+    "npm-check": "5.4.5"
   },
   "engines": {
     "node": "8.5.0",
